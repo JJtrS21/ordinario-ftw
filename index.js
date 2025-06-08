@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tarjeta.innerHTML = `
       <h3>${cap.titulo}</h3>
       <p>${cap.descripcion}</p>
-      <a href="${cap.enlace}">Leer más</a>
+      <a href="${cap.enlace}">Leer más <span class="sr-only">sobre ${cap.titulo}</span></a>
     `;
 
     contenedor.appendChild(tarjeta);
