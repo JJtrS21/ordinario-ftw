@@ -52,13 +52,16 @@
         <option value="capitulo">Solo por capítulo</option>
       </select>
 
-      <table id="tabla-comentarios">
+      <table id="tabla-comentarios" aria-describedby="tabla-descripcion">
+        <caption class="sr-only" id="tabla-descripcion">Tabla de comentarios enviados por los usuarios. 
+          Muestra el nombre, tipo de comentario, es decir, si esta dirigido a la obra en general o a un capítulo 
+          en específico, capítulo asociado y el texto del comentario.</caption>
         <thead>
           <tr>
-            <th>Nombre</th>
-            <th>Tipo</th>
-            <th>Capítulo</th>
-            <th>Comentario</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Capítulo</th>
+            <th scope="col">Comentario</th>
           </tr>
         </thead>
         <tbody>
